@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ٌRaghad Yaseen</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="test.css">
+  
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Raghad Khammash Yaseen</h1>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <nav class="nav">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero__content">
+<h2 class="hero__title">Hi, I'm <span id="typed"></span></h2>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed", {
+    strings: ["Raghad Yaseen", "a Flutter Developer", "a UI/UX Designer"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+        <p class="hero__subtitle"> Software Development engineer | Data Engineer | Mobile and
+ Web Developer</p>
+        <a href="#projects" class="button">View Projects</a>
+      </div>
+      <div class="hero__img">
+        <img src="img.jpg" alt="Your Name" class="profile-img">
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section__title">About Me</h2>
+      <p class="section__description">
+ I am an entry-level Flutter Developer and UI/UX Designer with foundational experience in
+ mobile application development and user interface design using Figma. I have a growing
+ understanding of user experience principles and cross-platform development. I am also
+ familiar with 3D design, logo creation, social media management, and team collaboration. I am
+ actively developing my technical and design skills to contribute to innovative digital solutions.      </p>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li>Flutter / Dart</li>
+        <li>UI/UX Design (Figma)</li>
+        <li>3D & Logo Design</li>
+        <li>Social Media Management</li>
+        <li>Team Leadership</li>
+      </ul>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__container">
+        <div class="project__item">
+          <h3>Tadbar</h3>
+          <p>Quran reflection app for group collaboration and organizing khatma. <a href="https://github.com/raghadyaseen/Tadbar">GitHub</a></p>
+        </div>
+        <div class="project__item">
+          <h3>Sanaaty</h3>
+          <p>Connects users with local industrial professionals across Jordan. <a href="https://github.com/raghadyaseen/sanaaty">GitHub</a></p>
+        </div>
+        <div class="project__item">
+          <h3>AI Security App</h3>
+          <p>Facial & device recognition system for campus security. <a href="https://github.com/raghadyaseen/project4">GitHub</a></p>
+        </div>
+      </div>
+    <section class="contact" id="contact">
+  <h2 class="section__title">Contact Me</h2>
+  <div class="contact__icons">
+    <a href="mailto:raghadyaseen966@gmail.com" target="_blank" class="contact__icon">
+      <i class="uil uil-envelope"></i>
+    </a>
+    <a href="tel:+962791522102" target="_blank" class="contact__icon">
+      <i class="uil uil-phone"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/raghad-yaseen1" target="_blank" class="contact__icon">
+      <i class="uil uil-linkedin"></i>
+    </a>
+    <a href="https://github.com/raghadyaseen" target="_blank" class="contact__icon">
+      <i class="uil uil-github"></i>
+    </a>
+  </div>
+</section>
+
+
+  </main>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 Raghad Khammash Yaseen. All rights reserved.</p>
+  </footer>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+</body>
+<script>
+  const toggleBtn = document.getElementById('themeToggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
+   AOS.init();
+</script>
+</html>
